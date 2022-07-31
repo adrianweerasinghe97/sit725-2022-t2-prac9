@@ -7,7 +7,7 @@ app.use(express.urlencoded({ extended: false}));
 
 
 //CAR ARRAY
-let cars = [];
+var cars = [];
 
 //Add new car
 app.post('/car', function(req,res){
@@ -16,22 +16,14 @@ app.post('/car', function(req,res){
     console.log(car);
     cars.push(car);
 
-    res.json({statusCode: 200, message: "Car is added into the database"})
+    res.json({statusCode: 200, message: "Car is added into the database.  Please go back to the previous page to add more cars"})
 });
 
 
 //Get all cars
 app.get('/car', function(req,res) {
     res.json(cars);
-});
-
-
-
-
-
-
-
-
+})
 
 
 

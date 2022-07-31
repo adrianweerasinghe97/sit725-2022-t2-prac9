@@ -10,25 +10,25 @@ app.use(express.urlencoded({ extended: false}));
 // Calculator
 
     //Add
-var cal=function(number1,number2) {
+var cal1=function(number1,number2) {
    var result = number1+number2;
    return result
 }
 
    //Subtract
-   var cal= function(number1, number2) {
+   var cal2= function(number1, number2) {
     var result = number1-number2;
     return result
 }
 
    //Divide
-   var cal= function(number1, number2) {
+   var cal3= function(number1, number2) {
     var result = number1/number2;
     return result
 }
 
    //Multiplication
-   var cal= function(number1, number2) {
+   var cal4= function(number1, number2) {
     var result = number1*number2;
     return result
 }
@@ -38,7 +38,7 @@ var cal=function(number1,number2) {
 app.get('/add',function(req,res){
     var number1 = parseInt(req.query.number1);
     var number2 = parseInt(req.query.number2);
-    var result  = cal(number1,number2)
+    var result  = cal1(number1,number2)
     res.send('The Result is : ' +result)
 })
 
@@ -46,7 +46,7 @@ app.get('/add',function(req,res){
 app.get('/deduct',function(req,res){
     var number1 = parseInt(req.query.number1);
     var number2 = parseInt(req.query.number2);
-    var result  = cal(number1,number2)
+    var result  = cal2(number1,number2)
     res.json({statusCode: 200, data: result, message: "Calculation Success"})
 })
 
@@ -54,7 +54,7 @@ app.get('/deduct',function(req,res){
 app.get('/divide',function(req,res){
     var number1 = parseInt(req.query.number1);
     var number2 = parseInt(req.query.number2);
-    var result  = cal(number1,number2)
+    var result  = cal3(number1,number2)
     res.json({statusCode: 200, data: result, message: "Calculation Success"})
 })
 
@@ -62,11 +62,9 @@ app.get('/divide',function(req,res){
 app.get('/mult',function(req,res){
     var number1 = parseInt(req.query.number1);
     var number2 = parseInt(req.query.number2);
-    var result  = cal(number1,number2)
+    var result  = cal4(number1,number2)
     res.json({statusCode: 200, data: result, message: "Calculation Success"})
 })
-
-
 
 
 

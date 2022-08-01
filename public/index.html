@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIT725 T2-P2</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SIT 725 Week 3 Practical 3</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+
 </head>
+
 <body>
-    <h1>Practical 2</h1>
+    <!-- Hero section -->
+    <section id="hero" class="text-white tm-font-big tm-parallax">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">SIT 725 Week 3 Practical 3</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="addcar.html" class="btn waves-effect waves-light">Add Car</a></li>
+
+                </ul>
+                <div class="w3-content w3-section" style="max-width:fit-content">
+                    <img class="mySlides" src="/images/317550.jpg" style="width:100%">
+                    <img class="mySlides" src="/images/477237.jpg" style="width:100%">
+                    <img class="mySlides" src="/images/evo.jpg" style="width:100%">
+                    <img class="mySlides" src="/images/Rogerbw.jpg" style="width:100%">
+
+                </div>
+            </div>
+        </nav>
+    </section>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }
+    </script>
+
 </body>
+
 </html>

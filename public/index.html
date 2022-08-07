@@ -14,11 +14,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Custom Style Sheet-->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 
 </head>
 
 <body>
+
+
     <!-- Hero section -->
     <section id="hero" class="text-white tm-font-big tm-parallax">
         <nav>
@@ -27,8 +35,26 @@
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="addcar.html" class="btn waves-effect waves-light">Add Car</a></li>
 
+
                 </ul>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li>
+                        <button class="fa fa-car fa-2x" onclick="myFunction()"></button>
+                    </li>
+                </ul>
+
                 <div class="w3-content w3-section" style="max-width:fit-content">
+                    <!-- <div class="col s12 center-align"> -->
+
+                    <!-- <a class="waves-effect waves-light btn click-me-button modal-trigger" id="clickMeButton"
+                            data-target="modal1" style="position: absolute; left: 45%; top: 64px;"><i
+                                class="material-icons left" onclick="myFunction1()"></i>Click To Next Page</a> -->
+
+                    <li>
+                        <button class="waves-effect waves-light btn click-me-button modal-trigger"
+                            onclick="myFunction1()" style="position: absolute; left: 45%; top: 64px;">Click To
+                            Register</button>
+                    </li>
                     <img class="mySlides" src="/images/317550.jpg" style="width:100%">
                     <img class="mySlides" src="/images/477237.jpg" style="width:100%">
                     <img class="mySlides" src="/images/evo.jpg" style="width:100%">
@@ -51,7 +77,21 @@
             myIndex++;
             if (myIndex > x.length) { myIndex = 1 }
             x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 2000);
+            setTimeout(carousel, 4000);
+        }
+    </script>
+
+    <script>
+        function myFunction() {
+            const myWindow = window.open("https://www.hotcars.com/jdm-cars-everyone-should-drive-at-least-once/", "", "width=500,height=500");
+            myWindow.opener.document.getElementById("demo").innerHTML = "HELLO!";
+        }
+    </script>
+
+    <script>
+        function myFunction1() {
+            const myWindow = window.open("page1.html", "", "width=500,height=500");
+            myWindow.opener.document.getElementById("demo").innerHTML = "HELLO!";
         }
     </script>
 

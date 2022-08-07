@@ -47,7 +47,7 @@ app.get('/deduct',function(req,res){
     var number1 = parseInt(req.query.number1);
     var number2 = parseInt(req.query.number2);
     var result  = cal2(number1,number2)
-    res.json({statusCode: 200, data: result, message: "Calculation Success"})
+    res.send('The Result is : ' +result)
 })
 
 //Divide
@@ -55,7 +55,7 @@ app.get('/divide',function(req,res){
     var number1 = parseInt(req.query.number1);
     var number2 = parseInt(req.query.number2);
     var result  = cal3(number1,number2)
-    res.json({statusCode: 200, data: result, message: "Calculation Success"})
+    res.send('The Result is : ' +result)
 })
 
 //Multiply
@@ -63,7 +63,7 @@ app.get('/mult',function(req,res){
     var number1 = parseInt(req.query.number1);
     var number2 = parseInt(req.query.number2);
     var result  = cal4(number1,number2)
-    res.json({statusCode: 200, data: result, message: "Calculation Success"})
+    res.send('The Result is : ' +result)
 })
 
 

@@ -1,31 +1,27 @@
 {
-  "name": "sit725-2022-t2-prac3",
+  "name": "sit725-2022-t2-prac4",
   "version": "1.0.0",
-  "description": "sit 725 2022 t2 week 3 practical",
+  "description": "sit 725 2022 t2 week 4 practical",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "Server Running but no tests to test"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adrianweerasinghe97/sit725-2022-t2-prac3.git"
+    "url": "git+https://github.com/adrianweerasinghe97/sit725-2022-t2-prac4.git"
   },
   "keywords": [
-    "Node",
-    "Express",
-    "Materialize",
-    "HTML",
-    "JS",
-    "CSS"
+    "Express"
   ],
   "author": "Adrian Weerasinghe",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/adrianweerasinghe97/sit725-2022-t2-prac3/issues"
+    "url": "https://github.com/adrianweerasinghe97/sit725-2022-t2-prac4/issues"
   },
-  "homepage": "https://github.com/adrianweerasinghe97/sit725-2022-t2-prac3#readme",
+  "homepage": "https://github.com/adrianweerasinghe97/sit725-2022-t2-prac4#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongodb": "^4.9.0"
   }
 }

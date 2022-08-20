@@ -1,100 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>SIT 725 Week 3 Practical 3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SIT 725 Prac 3</title>
+    <meta name="description" content="SIT 725 Prac 4">
+    <meta name="author" content="SitePoint">
+
+    <meta property="og:title" content="SIT 725 Prac 4">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="SIT 725 Prac 4">
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!-- Custom Style Sheet-->
     <link rel="stylesheet" href="css/styles.css">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
 
 </head>
 
 <body>
-
-
-    <!-- Hero section -->
-    <section id="hero" class="text-white tm-font-big tm-parallax">
-        <nav>
-            <div class="nav-wrapper">
-                <a href="#" class="brand-logo center">SIT 725 Week 3 Practical 3</a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="addcar.html" class="btn waves-effect waves-light">Add Car</a></li>
-
-
-                </ul>
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li>
-                        <button class="fa fa-car fa-2x" onclick="myFunction()"></button>
-                    </li>
-                </ul>
-
-                <div class="w3-content w3-section" style="max-width:fit-content">
-                    <!-- <div class="col s12 center-align"> -->
-
-                    <!-- <a class="waves-effect waves-light btn click-me-button modal-trigger" id="clickMeButton"
-                            data-target="modal1" style="position: absolute; left: 45%; top: 64px;"><i
-                                class="material-icons left" onclick="myFunction1()"></i>Click To Next Page</a> -->
-
-                    <li>
-                        <button class="waves-effect waves-light btn click-me-button modal-trigger"
-                            onclick="myFunction1()" style="position: absolute; left: 45%; top: 64px;">Click To
-                            Register</button>
-                    </li>
-                    <img class="mySlides" src="/images/317550.jpg" style="width:100%">
-                    <img class="mySlides" src="/images/477237.jpg" style="width:100%">
-                    <img class="mySlides" src="/images/evo.jpg" style="width:100%">
-                    <img class="mySlides" src="/images/Rogerbw.jpg" style="width:100%">
+    <nav>
+        <div class="nav-wrapper navbar-size">
+            <a href="#" class="brand-logo"><img class="user-image-size" src="images/evo.jpg" /></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a target="_blank"
+                        href="https://www.hotcars.com/jdm-cars-everyone-should-drive-at-least-once/">Cars</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main-body">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 center-align">
+                    <h1 id="heading">Welcome to SIT 725 Week 4</h1>
+                    <p class="flow-text">This is a demo application</p>
+                </div>
+                <div class="col s12 center-align">
+                    <img class="materialboxed materialboxed-image" src="images/317550.jpg">
+                </div>
+                <div class="col s12 center-align">
+                    <a class="waves-effect waves-light btn click-me-button modal-trigger" id="clickMeButton"
+                        data-target="modal1"><i class="material-icons left">auto_fix_high</i>Click Me</a>
+                </div>
+            </div>
+            <div class="row" id="card-section" style="background-color: black;">
+                <div class="col s4 center-align">
+                    <div class="card medium">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/evo.jpg">
+                        </div>
+                        <span class="card-title activator grey-text text-darken-4">EvoX<i
+                                class="material-icons right">more_vert</i></span>
+                        <p><a href="#">About Evo</a></p>
+                    </div>
 
                 </div>
             </div>
-        </nav>
-    </section>
-    <script>
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) { myIndex = 1 }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 4000);
-        }
-    </script>
-
-    <script>
-        function myFunction() {
-            const myWindow = window.open("https://www.hotcars.com/jdm-cars-everyone-should-drive-at-least-once/", "", "width=500,height=500");
-            myWindow.opener.document.getElementById("demo").innerHTML = "HELLO!";
-        }
-    </script>
-
-    <script>
-        function myFunction1() {
-            const myWindow = window.open("page1.html", "", "width=500,height=500");
-            myWindow.opener.document.getElementById("demo").innerHTML = "HELLO!";
-        }
-    </script>
-
+        </div>
+        </div>
+        <!-- Modal Structure continues on next slide-->
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal modal-fixed-footer">
+            <div class="row modal-content">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="Placeholder" id="title" type="text" class="validate">
+                            <label for="title">Title</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="image" type="text" class="validate">
+                            <label for="image">Image</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="description" type="text" class="validate">
+                            <label for="description">Description</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 center-align">
+                            <a class="waves-effect waves-light btn" id="formSubmit">submit</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

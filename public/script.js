@@ -14,7 +14,7 @@ const addProjectToApp = (project) => {
       type: 'POST',
       success: (result) => {
           alert(result.message);
-          location.reload(); // it automatically reloads the page 
+          location.reload(); 
       }
   })
 }
@@ -39,7 +39,7 @@ const cardList = [
       title: "Car",
       image_link: "images/317550.jpg",
       description: "Description about Car"
-  }
+  },
 ]
 
 const clickMe = () => {

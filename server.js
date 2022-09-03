@@ -92,6 +92,25 @@ app.use('/api/projects',projectRoutes)
 //     })
 // })
 
+
+
+app.get('/addTwoNumbers/:n1/:n2', function(req,res,next){
+    var n1 = parseInt(req.params.n1) 
+    var n2 = parseInt(req.params.n2)
+    var result = n1 + n2 || null
+    if(result == null) {
+      res.json({result: result, statusCode: 400}).status(400)
+    }
+    else { res.json({result: result, statusCode: 200}).status(200) } 
+  })
+
+
+// app.get('/addTwoNumbers/:n1/:n2', function(request, response){
+//     response.sendStatus(200);
+// })
+  
+
+
 var port = process.env.port || 3000;
 
 app.listen(port,()=>{

@@ -6,6 +6,15 @@ const getProjects = () => {
   })
 }
 
+
+let socket = io();
+socket.on('random_number', (msg)=>{
+  $("#heading").html("Welcome to SIT 725 Week 6:"+ msg)
+})
+
+
+
+
 //ajax function...
 const addProjectToApp = (project) => {
   $.ajax({
@@ -59,6 +68,11 @@ const addCards = (items) => {
     $("#card-section").append(itemToAppend)
   });
 }
+
+
+
+
+
 
 $(document).ready(function(){
   $('.materialboxed').materialbox();
